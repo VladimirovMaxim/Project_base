@@ -13,9 +13,6 @@ def show_menu():
       ''')
 
 
-
-
-
 def control_menu():
     while True:
         number = input('Выберите нужное действие: ')

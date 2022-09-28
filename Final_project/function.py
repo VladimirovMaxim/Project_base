@@ -54,7 +54,6 @@ def export_format_1():
     print(var_input_output.result_to_export_format1)
 
 
-
 def back_to_menu():
     input("\n\nВведите любой символ для возврата в меню ")
 
@@ -86,3 +85,22 @@ def delete_entry():  # удалить запись с бд взяв с конс�
     print()
     print(var_input_output.result_to_delete)
 
+
+def import_format_1():
+    f = open('file_1.csv', 'r')
+    data = f.read()
+    f.close()
+    with open('data_base.csv', 'a') as f:
+        f.write(data)
+    print(var_input_output.result_to_import_format1)
+
+
+def import_format_2():
+    f = open('file_2.csv', 'r')
+    data = f.read()
+    f.close()
+    data = "\n" + data
+    new_data = data.replace(", ", "\n")
+    with open('data_base.csv', 'a') as f:
+        f.write(new_data)
+    print(var_input_output.result_to_import_format2)

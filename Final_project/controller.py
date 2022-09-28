@@ -15,6 +15,14 @@ def button_click():
             menu.decor_equals()
             function.delete_entry()
             menu.decor_equals()
+        if choice == 3:
+            menu.decor_equals()
+            function.import_format_1()
+            menu.decor_equals()
+        if choice == 4:
+            menu.decor_equals()
+            function.import_format_2()
+            menu.decor_equals()
         if choice == 5:
             menu.decor_equals()
             function.export_format_1()
@@ -38,6 +46,3 @@ def button_click():
             break
         function.back_to_menu()
         menu.decor_equals()
-
-
-
